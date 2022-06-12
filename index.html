@@ -93,7 +93,7 @@
 
         body {
             /*cursor: url(./cur/xiaoshou1.cur), default;*/
-            cursor:default;
+            cursor: default;
         }
 
         a:hover {
@@ -507,6 +507,49 @@
                                         src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0">
                                 </script>
                             </div>
+
+                            <div class="box">
+                                <div id="showTime" style="margin-left: 10px !important;"></div>
+                            </div>
+                            <script type="text/javascript">
+                                let myClock = setInterval(function () {
+                                    var date = new Date();
+                                    //date.getDay()拿到的值是阿拉伯数字，将他换成汉字
+                                    var week = date.getDay()
+                                    switch (week) {
+                                        case 1:
+                                            week = "星期一"
+                                            break;
+                                        case 2:
+                                            week = "星期二"
+                                            break;
+                                        case 3:
+                                            week = "星期三"
+                                            break;
+                                        case 4:
+                                            week = "星期四"
+                                            break;
+                                        case 5:
+                                            week = "星期五"
+                                            break;
+                                        case 6:
+                                            week = "星期六"
+                                            break;
+                                        case 0:
+                                            week = "星期日"
+                                            break;
+                                    }
+                                    // 时间没有在此处一次性组合完毕是为了方便在 输出时美化
+                                    // 组合年月日
+                                    let ymd = date.getFullYear() + "." + (date.getMonth() + 1) + "." + date.getDate();
+                                    // 组合时分秒
+                                    let hms = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+                                    document.getElementById("showTime").innerHTML = "&nbsp;&nbsp;"+ ymd + "&nbsp;&nbsp;" + week + "&nbsp;&nbsp; " + hms;
+                                }, 1000)
+
+                            </script>
+
                         </div>
 
                         <ul class="nav navbar-menu text-xs order-1 order-md-2">
@@ -516,14 +559,19 @@
                                     fetch('https://v1.hitokoto.cn')
                                         .then(response => response.json())
                                         .then(data => {
+                                            console.log(data)
                                             const hitokoto = document.getElementById('hitokoto_text')
+                                            // const from = document.getElementById('from_text')
                                             hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                            hitokoto.innerText = data.hitokoto
+                                            // hitokoto.innerText = data.hitokoto + '   ——《' + data.from + '》· ' + data.from_who
+                                            hitokoto.innerText = data.hitokoto + '   ——《' + data.from + '》· '
                                         })
                                         .catch(console.error)
                                 </script>
-                                <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">我爱你，洛千婷</a>
+                                <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">既还活着，总该做点什么。</a>
                                 </div>
+                                <!--                                <div id="from"><a href="#" target="_blank" id="from_text">熊世强</a>-->
+                                <!--                                </div>-->
                             </li>
                             <!-- 一言 end -->
                             <li class="nav-search ml-3 ml-md-4">
@@ -714,10 +762,12 @@
                         <div class="search-group group-e ">
                             <ul class="search-type">
                                 <li><input hidden="" type="radio" name="type" id="type-fy"
-                                           value="https://translate.google.cn/?hl=en&sl=auto&tl=en&text=" data-placeholder="输入要翻译的文本..."><label
+                                           value="https://translate.google.cn/?hl=en&sl=auto&tl=en&text="
+                                           data-placeholder="输入要翻译的文本..."><label
                                         for="type-fy"><span class="text-muted">谷歌</span></label></li>
                                 <li><input hidden="" type="radio" name="type" id="type-bd"
-                                           value="https://fanyi.baidu.com/translate?aldtype=16047&query=" data-placeholder="输入要翻译的文本..."><label
+                                           value="https://fanyi.baidu.com/translate?aldtype=16047&query="
+                                           data-placeholder="输入要翻译的文本..."><label
                                         for="type-bd"><span class="text-muted">百度</span></label></li>
                                 <li><input hidden="" type="radio" name="type" id="type-jshan"
                                            value="http://www.iciba.com/word?w="
@@ -1635,7 +1685,7 @@
                     常用推荐<span style="color:#f1404b"> · </span>其他常用
                 </h4>
                 <div class="flex-fill"></div>
-                                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
+                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
             </div>
             <div class="row ">
                 <!--今日热榜-->
@@ -2005,7 +2055,7 @@
                     软件工具<span style="color:#f1404b"> · </span>常用工具
                 </h4>
                 <div class="flex-fill"></div>
-                                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
+                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
             </div>
             <div class="row ">
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
@@ -2898,7 +2948,7 @@
                     知识学习
                 </h4>
                 <div class="flex-fill"></div>
-                                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
+                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
             </div>
             <div class="row ">
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
@@ -3321,7 +3371,7 @@
                     影视资源<span style="color:#f1404b"> · </span>在线
                 </h4>
                 <div class="flex-fill"></div>
-                                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
+                <a class='btn-move text-xs sidebar-more' href='#'>返回顶部↑</a>
             </div>
             <div class="row ">
 
@@ -4638,12 +4688,14 @@
 
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
-                <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top" data-toggle="tooltip"
+                <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top"
+                   data-toggle="tooltip"
                    data-placement="left" title="返回顶部">
                     <i class="iconfont icon-to-up"></i>
                 </a>
                 <!-- 右下角搜索  -->
-                <a href="javascript:" data-toggle="modal" data-placement="left" title="搜一搜" data-target="#search-modal" class="btn rounded-circle m-1"
+                <a href="javascript:" data-toggle="modal" data-placement="left" title="搜一搜" data-target="#search-modal"
+                   class="btn rounded-circle m-1"
                    rel="search" one-link-mark="yes">
                     <i class="iconfont icon-sousuo"></i>
                 </a>
@@ -4664,7 +4716,7 @@
                         href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2826556749@qq.com"
                         target="_blank"><strong>2826556749@qq.com</strong></a>&nbsp;&nbsp;<br/>&copy; Copyright
                     2021-2025 小强个人导航 &nbsp;&nbsp;by <span style="color: #0d95e8">xqiang</span>
-<!--                    <a href="#" target="_blank"><strong>xqiang</strong></a>&nbsp;&nbsp;<br/>-->
+                    <!--                    <a href="#" target="_blank"><strong>xqiang</strong></a>&nbsp;&nbsp;<br/>-->
                 </div>
                 <!-- <div class="footer-text" style="position: relative; top: 6px;">
                         <script async defer src="https://buttons.github.io/buttons.js"></script>
