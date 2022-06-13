@@ -1,0 +1,25 @@
+.main-footer .lianxi{
+    position: relative;
+}
+.weixin{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: 40px;
+    bottom: -25px;
+
+    /*padding-right: 30px;*/
+
+}
+.lianxi:hover .weixin{
+    /*display: inline;*/
+    visibility: visible !important;
+
+}
+#live2d{
+    display: none;
+}
+.icon-24gf-table:before {
+    content: none !important;
+}
+
