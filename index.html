@@ -19,7 +19,7 @@
     <meta property="og:description" content="小强个人导航 - 不求最全，但求好用">
     <meta property="og:image" content="https://xsq13579.github.io//wp-content/screenshot.jpg">
     <meta property="og:site_name" content="小强个人导航">
-    <link  rel="stylesheet" href="css/yangshi.css">
+    <link rel="stylesheet" href="css/yangshi.css">
     <link rel="icon" href="./ico.ico">
     <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min-5.6.2.css'
           type='text/css' media='all'>
@@ -159,7 +159,7 @@
             height: 15px;
             background: #f1404b;
             position: absolute;
-            animation: load .6s infinite alternate ease-in-out
+            animation: load .3s infinite alternate ease-in-out
         }
 
         .loader::before {
@@ -265,7 +265,7 @@
                             </li>
                             <li class="sidebar-item">
 
-                                <a href="#term-13" class="smooth">
+                                <a href="javascript:;" class="smooth">
 
                                     <i class="iconfont icon-tuijian icon-fw icon-lg mr-2"></i>
                                     <span>常用推荐</span>
@@ -282,7 +282,7 @@
                                 </ul>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#term-88" class="smooth">
+                                <a href="javascript:;" class="smooth">
                                     <i class="iconfont icon-tool-fill icon-fw icon-lg mr-2"></i>
                                     <span>在线工具</span>
                                     <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -299,7 +299,7 @@
 
                             </li>
                             <li class="sidebar-item">
-                                <a href="#term-12" class="smooth">
+                                <a href="javascript:;" class="smooth">
                                     <i class="iconfont icon-book icon-fw icon-lg mr-2"></i>
                                     <span>知识学习</span>
                                     <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -311,6 +311,9 @@
                                     <li>
                                         <a href="#term-15" class="smooth"><span>网课|编程</span></a>
                                     </li>
+                                    <li>
+                                        <a href="#term-16" class="smooth"><span>考试相关</span></a>
+                                    </li>
 
                                 </ul>
 
@@ -318,7 +321,7 @@
 
                             <li class="sidebar-item">
                                 <!--<a href="javascript:;">-->
-                                <a href="#term-3" class="smooth change-href" data-change="#term-3">
+                                <a href="javascript:;" class="smooth change-href" data-change="#term-3">
                                     <i class="iconfont icon-shipin icon-fw icon-lg mr-2"></i>
                                     <span>影视资源</span>
                                     <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -343,7 +346,7 @@
 
                             <li class="sidebar-item">
                                 <!--<a href="javascript:;">-->
-                                <a href="#term-7" class="smooth change-href" data-change="#term-7">
+                                <a href="javascript:;" class="smooth change-href" data-change="#term-7">
                                     <i class="iconfont icon-ruanjianku icon-fw icon-lg mr-2"></i>
                                     <span>软件工具</span>
                                     <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -365,7 +368,7 @@
 
                             <li class="sidebar-item">
                                 <!--<a href="javascript:;">-->
-                                <a href="#term-10" class="smooth change-href" data-change="#term-10">
+                                <a href="javascript:;" class="smooth change-href" data-change="#term-10">
                                     <i class="iconfont icon-zixun1 icon-fw icon-lg mr-2"></i>
                                     <span>社区咨询</span>
                                     <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -422,6 +425,7 @@
         </div>
     </div>
     <div class="main-content flex-fill">
+
         <div class="big-header-banner">
             <div id="header" class="page-header sticky">
                 <div class="navbar navbar-expand-md">
@@ -471,10 +475,10 @@
                                             <a href="https://qm.qq.com/cgi-bin/qm/qr?k=A1JI0rKV8-sC74hQwWJopiFhk4Y_B5OS&noverify=0"
                                                target="_blank">联系站长</a>
                                         </li>
-                                        <li id="menu-item-285"
-                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
-                                            <a href="#">QQ：2826556749</a>
-                                        </li>
+                                        <!--                                        <li id="menu-item-285"-->
+                                        <!--                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">-->
+                                        <!--                                            <a href="#">QQ：2826556749</a>-->
+                                        <!--                                        </li>-->
                                         <li id="menu-item-260"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264">
                                             <a href="./templates/more.html" target="_blank">更多</a>
@@ -638,10 +642,11 @@
             <div class="s-search">
                 <div id="search" class="s-search mx-auto">
                     <div id="search-list-menu" class="hide-type-list">
-                        <div class="s-type text-center hide-type-list">
+                        <div class="s-type text-center ">
                             <div class="s-type-list big ">
+
                                 <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                                <label for="type-baidu" class="" data-id="group-a"><span>常用</span></label>
+                                <label for="type-zhiwang" class="" data-id="group-a"><span>常用</span></label>
                                 <label for="type-baidu1" data-id="group-b"><span>搜索</span></label>
                                 <label for="type-bili" data-id="group-d"><span>社区</span></label>
                                 <label for="type-csdn" data-id="group-g"><span>开发</span></label>
@@ -650,6 +655,7 @@
 
                                 <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
                                 <label for="type-zhaopin" data-id="group-f"><span>求职</span></label>
+
                             </div>
                         </div>
                     </div>
@@ -661,12 +667,22 @@
                     <div id="search-list" class="hide-type-list">
                         <div class="search-group group-a ">
                             <ul class="search-type">
-                                <li><input checked="checked" hidden="" type="radio" name="type" id="type-baidu"
-                                           value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label
-                                        for="type-baidu"><span class="text-muted">百度</span></label></li>
-                                <li><input hidden="" type="radio" name="type" id="type-google"
-                                           value="https://www.google.com/search?q=" data-placeholder="谷歌两下"><label
-                                        for="type-google"><span class="text-muted">谷歌</span></label></li>
+
+                                <li><input hidden="" type="radio" name="type" id="type-zhiwang"
+                                           value="https://kns.cnki.net/kns8/DefaultResult/Index?dbcode=CFLS&kw="
+                                           data-placeholder="输入要搜索的关键字"><label
+                                        for="type-zhiwang"><span class="text-muted">知网</span></label></li>
+                                <li><input hidden="" type="radio" name="type" id="type-xueshu1"
+                                           value="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q="
+                                           data-placeholder="谷歌学术"><label for="type-xueshu1"><span
+                                        class="text-muted">谷歌</span></label></li>
+                                <li><input hidden="" type="radio" name="type" id="type-wanfang"
+                                           value="https://s.wanfangdata.com.cn/paper?q=" data-placeholder="输入关键字"><label
+                                        for="type-wanfang"><span class="text-muted">万方</span></label></li>
+                                <li><input hidden="" type="radio" name="type" id="type-baiduxs"
+                                           value="https://xueshu.baidu.com/s?wd=" data-placeholder="输入关键字"><label
+                                        for="type-baiduxs"><span class="text-muted">百度</span></label></li>
+
                                 <li><input hidden="" type="radio" name="type" id="type-dzs"
                                            value="https://zh.zlib.life/s/" data-placeholder="搜电子书"><label
                                         for="type-dzs"><span class="text-muted">电子书</span></label></li>
@@ -678,9 +694,6 @@
                                 <li><input hidden="" type="radio" name="type" id="type-zhannei"
                                            value="https://www.423down.com/?s=" data-placeholder="软件搜索"><label
                                         for="type-zhannei"><span class="text-muted">软件</span></label></li>
-                                <li><input hidden="" type="radio" name="type" id="type-taobao"
-                                           value="https://s.taobao.com/search?q=" data-placeholder="淘宝"><label
-                                        for="type-taobao"><span class="text-muted">淘宝</span></label></li>
                                 <li><input hidden="" type="radio" name="type" id="type-bing"
                                            value="https://www.cupfox.com/search?key="
                                            data-placeholder="影视资源聚合搜索"><label for="type-bing"><span
@@ -704,10 +717,7 @@
                                 <li><input hidden="" type="radio" name="type" id="type-weiji1"
                                            value="https://zh.wikipedia.shisu.cf/wiki/" data-placeholder="维基两下"><label
                                         for="type-weiji1"><span class="text-muted">维基</span></label></li>
-                                <li><input hidden="" type="radio" name="type" id="type-xueshu1"
-                                           value="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q="
-                                           data-placeholder="谷歌学术"><label for="type-xueshu1"><span
-                                        class="text-muted">学术</span></label></li>
+
 
                                 <!-- <li><input hidden="" type="radio" name="type" id="type-360"
                                             value="https://www.so.com/s?q=" data-placeholder="360好搜"><label
@@ -879,13 +889,17 @@
                             <div class="carousel slide" data-ride="carousel" data-interval="3000">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
-<!--                                        <a class="overflowClip_1" href="https://mail.qq.com/" target="_blank"></a>-->
+                                        <!--                                        <a class="overflowClip_1" href="https://mail.qq.com/" target="_blank">小强个人导航 - 用心精选每一个链接</a>-->
+                                        <!--                                       <li class="overflowClip_1">小强个人导航 - 用心精选每一个链接</li>-->
                                         小强个人导航 - 用心精选每一个链接
                                     </div>
-                                    <div class="carousel-item ">小强个人导航 - 不求最全，但求好用
+                                    <div class="carousel-item ">
+                                        <!--                                        <li class="overflowClip_1">小强个人导航 - 不求最全，但求好用</li>-->
+                                        小强个人导航 - 不求最全，但求好用
                                     </div>
-                                    <div class="carousel-item ">推荐电脑使用，手机建议用浏览器打开，否则部分网址打不开
-
+                                    <div class="carousel-item ">
+                                        <!--                                        <li class="overflowClip_2">推荐电脑使用，手机建议用浏览器打开，否则部分网址打不开</li>-->
+                                        推荐电脑使用，手机建议浏览器打开，否则部分网址打不开
                                     </div>
                                 </div>
                             </div>
@@ -898,9 +912,11 @@
                 </div>
             </div>
         </div>
+
         <div id="content" class="content-site customize-site">
 
-
+            <script type="text/javascript" color="154,205,50" opacity='0.8' zIndex="-2" count="150"
+                    src="http://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
             <div class="d-flex flex-fill ">
                 <h4 class="text-gray text-lg mb-4">
                     <i class="site-tag iconfont icon-tag icon-lg mr-1" id="term-1"></i>
@@ -969,7 +985,8 @@
 
                     <div class="url-body default">
                         <a href="http://ht.haituntv.top/app/index/qudao.html?uid=MTk3Mg==" target="_blank" data-id="6"
-                           data-url="http://ht.haituntv.top/app/index/qudao.html?uid=MTk3Mg==" class="card no-c  mb-4 site-689" data-toggle="tooltip"
+                           data-url="http://ht.haituntv.top/app/index/qudao.html?uid=MTk3Mg=="
+                           class="card no-c  mb-4 site-689" data-toggle="tooltip"
                            data-placement="bottom" title="各类影视会员聚合软件(浏览器打开)">
                             <div class="card-body">
                                 <div class="url-content d-flex align-items-center">
@@ -987,7 +1004,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="http://ht.haituntv.top/app/index/qudao.html?uid=MTk3Mg==" class="togo text-center text-muted is-views" data-id="6"
+                        <a href="http://ht.haituntv.top/app/index/qudao.html?uid=MTk3Mg=="
+                           class="togo text-center text-muted is-views" data-id="6"
                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
                                 class="iconfont icon-goto"></i></a>
                     </div>
@@ -1050,7 +1068,8 @@
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
 
                     <div class="url-body default">
-                        <a href="https://www.freebuf.com/" target="_blank" data-id="6" data-url="https://www.freebuf.com/"
+                        <a href="https://www.freebuf.com/" target="_blank" data-id="6"
+                           data-url="https://www.freebuf.com/"
                            class="card no-c  mb-4 site-689" data-toggle="tooltip" data-placement="bottom"
                            title="网络安全行业门户">
                             <div class="card-body">
@@ -1077,7 +1096,8 @@
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
 
                     <div class="url-body default">
-                        <a href="https://www.ichunqiu.com/" target="_blank" data-id="6" data-url="https://www.ichunqiu.com/"
+                        <a href="https://www.ichunqiu.com/" target="_blank" data-id="6"
+                           data-url="https://www.ichunqiu.com/"
                            class="card no-c  mb-4 site-689" data-toggle="tooltip" data-placement="bottom"
                            title="专注网络安全、信息安全、白帽子技术的在线学习,实训平台。">
                             <div class="card-body">
@@ -1091,7 +1111,8 @@
                                         <div class="text-sm overflowClip_1">
                                             <strong>i春秋</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">专注网络安全、信息安全、白帽子技术的在线学习,实训平台。</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                                            专注网络安全、信息安全、白帽子技术的在线学习,实训平台。</p>
                                     </div>
                                 </div>
                             </div>
@@ -2145,33 +2166,35 @@
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
 
                     <div class="url-body default">
-                        <a href="https://photo.zmki.cn/" target="_blank" data-id="14"
-                           data-url="https://photo.zmki.cn/" class="card no-c  mb-4 site-14" data-toggle="tooltip"
-                           data-placement="bottom" title="路途遥远，和你岁月相随">
+                        <a href="https://www.adguider.com/calendar" target="_blank" data-id="14"
+                           data-url="https://www.adguider.com/calendar" class="card no-c  mb-4 site-14"
+                           data-toggle="tooltip"
+                           data-placement="bottom" title="广告人网站">
                             <div class="card-body">
                                 <div class="url-content d-flex align-items-center">
                                     <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                        <img class="lazy" src="ico/xiangce.png" data-src="ico/xiangce.png"
-                                             onerror="javascript:this.src='ico/xiangce.png'" alt="时光相册">
+                                        <img class="lazy" src="ico/yxrl.jpg" data-src="ico/yxrl.jpg"
+                                             onerror="javascript:this.src='ico/yxrl.jpg'" alt="营销日历">
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
-                                            <strong>时光相册</strong>
+                                            <strong>营销日历</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">路途遥远，和你岁月相随</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">广告人网站</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <a href="https://photo.zmki.cn/" class="togo text-center text-muted is-views" data-id="14"
+                        <a href="https://www.adguider.com/calendar" class="togo text-center text-muted is-views"
+                           data-id="14"
                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
                                 class="iconfont icon-goto"></i></a>
                     </div>
                 </div>
 
             </div>
-
+            <!-- 软件工具 -->
             <div class="d-flex flex-fill ">
                 <h4 class="text-gray text-lg mb-4">
                     <i class="site-tag iconfont icon-tag icon-lg mr-1" id="term-88"></i>
@@ -3431,7 +3454,8 @@
                                         <div class="text-sm overflowClip_1">
                                             <strong>学习强国</strong>
                                         </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">由中共中央宣传部主管，立足全体党员、面向全社会的优质平台</p>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                                            由中共中央宣传部主管，立足全体党员、面向全社会的优质平台</p>
                                     </div>
                                 </div>
                             </div>
@@ -3453,7 +3477,7 @@
                                     <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
                                         <img class="lazy" src="ico/zhongguodx.jpg" data-src="ico/zhongguodx.jpg"
-                                             onerror="javascript:this.src='ico/zhongguodx.jpg'" alt="中国大学MOOC·">
+                                             onerror="javascript:this.src='ico/zhongguodx.jpg'" alt="中国大学MOOC">
                                     </div>
                                     <div class="url-info flex-fill">
                                         <div class="text-sm overflowClip_1">
@@ -3599,7 +3623,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.jikexueyuan.com/" class="togo text-center text-muted is-views" data-id="360"
+                        <a href="https://www.jikexueyuan.com/" class="togo text-center text-muted is-views"
+                           data-id="360"
                            data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
                                 class="iconfont icon-goto"></i></a>
                     </div>
@@ -3743,6 +3768,376 @@
 
 
             </div>
+            <div class="d-flex flex-fill ">
+                <h4 class="text-gray text-lg mb-4">
+                    <i class="site-tag iconfont icon-tag icon-lg mr-1" id="term-16"></i>
+                    知识学习<span style="color:#f1404b"> · </span>考试相关
+                </h4>
+                <div class="flex-fill"></div>
+            </div>
+            <div class="row ">
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://yz.chsi.com.cn/" target="_blank" data-id="360"
+                           data-url="https://yz.chsi.com.cn/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="中国研究生招生信息网">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/yzw.jpg" data-src="ico/yzw.jpg"
+                                             onerror="javascript:this.src='ico/yzw.jpg'" alt="研招网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>研招网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">中国研究生招生信息网</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://yz.chsi.com.cn/" class="togo text-center text-muted is-views"
+                           data-id="360"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="http://www.neea.edu.cn/" target="_blank" data-id="360"
+                           data-url="http://www.neea.edu.cn/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip"
+                           data-placement="bottom" title="提供国家教育考试、社会证书考试、海外考试的信息资讯、网上报名、成绩查询、证书查询、证书补办等服务">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/jyksw.jpg" data-src="ico/jyksw.jpg"
+                                             onerror="javascript:this.src='ico/jyksw.jpg'" alt="中国教育考试网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>中国教育考试网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                                            提供国家教育考试、社会证书考试、海外考试的信息资讯、网上报名、成绩查询、证书查询、证书补办等服务</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.neea.edu.cn/"
+                           class="togo text-center text-muted is-views" data-id="360"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.ruankao.org.cn/" target="_blank" data-id="360"
+                           data-url="https://www.ruankao.org.cn/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="中国计算机技术职业资格网">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/ruankao.jpg" data-src="ico/ruankao.jpg"
+                                             onerror="javascript:this.src='ico/ruankao.jpg'" alt="软考网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>软考网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">中国计算机技术职业资格网</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.ruankao.org.cn/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://bbs.hh010.com/" target="_blank" data-id="360"
+                           data-url="https://bbs.hh010.com/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="国内专业的思科华为微软网络工程师技术社区">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/honghao.jpg" data-src="ico/honghao.jpg"
+                                             onerror="javascript:this.src='ico/honghao.jpg'" alt="鸿鹄论坛">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>鸿鹄论坛</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">国内专业的思科华为微软网络工程师技术社区</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://bbs.hh010.com/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.txks.org.cn/" target="_blank" data-id="360"
+                           data-url="https://www.txks.org.cn/" class="card no-c  mb-4 site-360" data-toggle="tooltip"
+                           data-placement="bottom" title="全国通信专业技术人员职业水平考试网">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/tongxinw.jpg" data-src="ico/tongxinw.jpg"
+                                             onerror="javascript:this.src='ico/tongxinw.jpg'" alt="通信考试">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>通信考试</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">全国通信专业技术人员职业水平考试网</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.txks.org.cn/" class="togo text-center text-muted is-views" data-id="360"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.jszg.edu.cn/" target="_blank" data-id="360"
+                           data-url="https://www.jszg.edu.cn/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="教师资格考试认定网上申报">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/jzw.jpg" data-src="ico/jzw.jpg"
+                                             onerror="javascript:this.src='ico/jzw.jpg'" alt="中国教师资格网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>中国教师资格网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">教师资格考试认定网上申报</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.jszg.edu.cn/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.coc.gov.cn/coc/" target="_blank" data-id="360"
+                           data-url="https://www.coc.gov.cn/coc/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="全国建造师统一管理的网站">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/jzsw.jpg" data-src="ico/jzsw.jpg"
+                                             onerror="javascript:this.src='ico/jzsw.jpg'" alt="中国建造师网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>中国建造师网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">全国建造师统一管理的网站</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.coc.gov.cn/coc/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="http://www.cpta.com.cn/" target="_blank" data-id="360"
+                           data-url="http://www.cpta.com.cn/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="主要承担公务员录用考试、专业技术人员资格考试、公务员遴选考试等">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/renshiw.jpg" data-src="ico/renshiw.jpg"
+                                             onerror="javascript:this.src='ico/renshiw.jpg'" alt="中国人事考试网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>中国人事考试网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">主要承担公务员录用考试、专业技术人员资格考试、公务员遴选考试等</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.cpta.com.cn/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="http://www.catticenter.com/" target="_blank" data-id="360"
+                           data-url="http://www.catticenter.com/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="全国翻译专业资格(水平)考试">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/fanyiks.jpg" data-src="ico/fanyiks.jpg"
+                                             onerror="javascript:this.src='ico/fanyiks.jpg'" alt="CATTI">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>CATTI</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">IT职业在线教育平台</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.catticenter.com/" class="togo text-center text-muted is-views"
+                           data-id="360"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.teacher.com.cn/" target="_blank" data-id="360"
+                           data-url="https://www.teacher.com.cn/"
+                           class="card no-c  mb-4 site-360" data-toggle="tooltip" data-placement="bottom"
+                           title="高级研修 国家级 中小学教师 “国培计划(2019)”">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/juxujyw.jpg" data-src="ico/juxujyw.jpg"
+                                             onerror="javascript:this.src='ico/juxujyw.jpg'" alt="全国中小学教师继续教育网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>全国中小学教师继续教育网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">高级研修 国家级 中小学教师 “国培计划(2019)”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.teacher.com.cn/" class="togo text-center text-muted is-views" data-id="360"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.offcn.com/" target="_blank" data-id="360"
+                           data-url="https://www.offcn.com/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="提供各类考试公告、时间、职位表、报名、成绩、试题等">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/zhonggong.jpg" data-src="ico/zhonggong.jpg"
+                                             onerror="javascript:this.src='ico/zhonggong.jpg'" alt="中公教育网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>中公教育网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">提供各类考试公告、时间、职位表、报名、成绩、试题等</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.offcn.com/"
+                           class="togo text-center text-muted is-views" data-id="360" data-toggle="tooltip"
+                           data-placement="right" title="直达" rel="nofollow"><i class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="https://www.kaoyan.com/" target="_blank" data-id="360"
+                           data-url="https://www.kaoyan.com/" class="card no-c  mb-4 site-360"
+                           data-toggle="tooltip" data-placement="bottom" title="中国领先的考研交流平台和研究生招生信息网络发布平台">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/kaoyanb.jpg" data-src="ico/kaoyanb.jpg"
+                                             onerror="javascript:this.src='ico/kaoyanb.jpg'" alt="考研帮">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>考研帮</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">中国领先的考研交流平台和研究生招生信息网络发布平台</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.kaoyan.com/" class="togo text-center text-muted is-views"
+                           data-id="360" data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
+
+                    <div class="url-body default">
+                        <a href="http://www.chinakaoyan.com/" target="_blank" data-id="6"
+                           data-url="http://www.chinakaoyan.com/" class="card no-c  mb-4 site-689"
+                           data-toggle="tooltip" data-placement="bottom" title="为考生提供各类考研资讯">
+                            <div class="card-body">
+                                <div class="url-content d-flex align-items-center">
+                                    <div
+                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
+                                        <img class="lazy" src="ico/kaoyanxxw.jpg" data-src="ico/kaoyanxxw.jpg"
+                                             onerror="javascript:this.src='ico/kaoyanxxw.jpg'" alt="考研信息网">
+                                    </div>
+                                    <div class="url-info flex-fill">
+                                        <div class="text-sm overflowClip_1">
+                                            <strong>考研信息网</strong>
+                                        </div>
+                                        <p class="overflowClip_1 m-0 text-muted text-xs">为考生提供各类考研资讯</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.chinakaoyan.com/" class="togo text-center text-muted is-views" data-id="6"
+                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
+                                class="iconfont icon-goto"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
 
 
             <div class="d-flex flex-fill ">
@@ -4994,31 +5389,7 @@
 
 
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
-
-                    <div class="url-body default">
-                        <a href="https://www.zhihu.com/" target="_blank" data-id="3300"
-                           data-url="https://www.zhihu.com/" class="card no-c  mb-4 site-3300"
-                           data-toggle="tooltip" data-placement="bottom" title="有问题，就会有答案">
-                            <div class="card-body">
-                                <div class="url-content d-flex align-items-center">
-                                    <div
-                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                        <img class="lazy" src="ico/zhihu.png" data-src="ico/zhihu.png"
-                                             onerror="javascript:this.src='ico/zhihu.png'" alt="知乎">
-                                    </div>
-                                    <div class="url-info flex-fill">
-                                        <div class="text-sm overflowClip_1">
-                                            <strong>知乎</strong>
-                                        </div>
-                                        <p class="overflowClip_1 m-0 text-muted text-xs">有问题，就会有答案</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://www.zhihu.com/" class="togo text-center text-muted is-views" data-id="3300"
-                           data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow"><i
-                                class="iconfont icon-goto"></i></a>
-                    </div>
+                    <p style="color:red;">待添加，敬请期待！</p>
                 </div>
 
 
@@ -5042,7 +5413,7 @@
 
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
-<!--  返回顶部 -->
+                <!--  返回顶部 -->
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top"
                    data-toggle="tooltip" data-placement="left" title="返回顶部">
                     <i class="iconfont icon-to-up"></i>
@@ -5050,25 +5421,25 @@
                 <!-- 联系站长  -->
                 <a href="javascript:" data-toggle="modal" title="联系站长"
                    class="btn rounded-circle m-1 lianxi" id="lianxi">
-                     <img src="ico/weixin.jpg" alt="联系站长" class="weixin" id="weixin" style="visibility: hidden;" >
+                    <img src="ico/weixin.jpg" alt="联系站长" class="weixin" id="weixin" style="visibility: hidden;">
                     <i class="iconfont icon-atm-fill"></i>
 
 
                 </a>
-<!--   mini书签 -->
+                <!--   mini书签 -->
                 <a href="nav/index.html" class="btn rounded-circle kefu m-1" target="_blank" data-toggle="tooltip"
                    data-placement="left" title="mini 书签">mini书签
                     <i class="iconfont icon-24gf-table"></i>
                 </a>
                 <!-- 右下角搜索 end -->
-<!-- 夜间模式 -->
+                <!-- 夜间模式 -->
                 <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'"
                    class="btn rounded-circle switch-dark-mode m-1" id="yejian" data-toggle="tooltip"
                    data-placement="left" title="夜间模式">
                     <i class="mode-ico iconfont icon-yejian"></i>
                 </a>
             </div>
-<!--  脚注-->
+            <!--  脚注-->
             <div class="footer-inner" style="text-align: center;">
                 <div class="footer-text">本站内容源自互联网，如有内容侵犯了您的权益，请联系删除相关内容。联系邮箱：<a
                         href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2826556749@qq.com"
