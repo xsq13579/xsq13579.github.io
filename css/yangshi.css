@@ -24,6 +24,18 @@
 }
 .canvas-bg{
     /*width: 1230px !important;*/
-    height: 275px !important;
+    height: 278px !important;
+}
+/*.sidebar-menu{*/
+/*    height: 350px !important;*/
+/*}*/
+/*.border-top{*/
+/*    height: 60px !important;*/
+/*}*/
+.aplayer{
+    left:50px !important;
+}
+.aplayer-list{
+    left: 55px !important;
 }
 
