@@ -32,10 +32,10 @@
 /*.border-top{*/
 /*    height: 60px !important;*/
 /*}*/
-/*.aplayer{*/
-/*    left:50px !important;*/
-/*}*/
-/*.aplayer-list{*/
-/*    left: 55px !important;*/
-/*}*/
+.aplayer{
+    left:50px !important;
+}
+.aplayer-list{
+    left: 50px !important;
+}
 
