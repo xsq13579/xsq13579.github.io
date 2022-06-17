@@ -19,6 +19,9 @@
 #live2d{
     display: none;
 }
+#waifu-tips{
+    visibility: hidden !important;
+}
 .icon-24gf-table:before {
     content: none !important;
 }
