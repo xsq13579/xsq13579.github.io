@@ -42,5 +42,10 @@
 .aplayer-list{
     left: 50px !important;
 }
+.subtitle{
+    font-size:15px;
+    font-style: normal;
+    color: #d58512;
+}
 
 
