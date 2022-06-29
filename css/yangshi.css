@@ -47,5 +47,11 @@
     font-style: normal;
     color: #d58512;
 }
+/*.post-top {*/
+/*    padding-bottom: 40px !important;*/
+/*}*/
+.first-tag{
+    padding-top: 20px !important;
+}
 
 
