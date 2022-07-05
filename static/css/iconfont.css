@@ -1565,8 +1565,10 @@
   content: "\e85d";
 }
 
-.icon-close:before {
+.icon-close-circle:before {
   content: "\e75e";
+  color: black;
+
 }
 
 .icon-searchcart-fill:before {

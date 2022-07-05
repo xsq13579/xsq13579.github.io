@@ -59,6 +59,21 @@
 
 }
 }
+.s-type-list{
+    /*margin-right: 15px !important;*/
+    padding-right: 15px !important;
+}
+#content .tab-content{
+    margin-top: 0px !important;
+
+
+}
+#content .tab-content #my-nav .row .nothing{
+    margin-bottom: 0px !important;
+}
+#content .tab-content #my-nav .row .remove-sites{
+
+}
 
 
 
