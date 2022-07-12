@@ -1489,7 +1489,7 @@
   content: "\e754";
 }
 
-.icon-reeor-fill:before {
+.icon-close-circle:before {
   content: "\e854";
 }
 
@@ -1565,7 +1565,7 @@
   content: "\e85d";
 }
 
-.icon-close-circle:before {
+.icon-close:before {
   content: "\e75e";
   color: black;
 

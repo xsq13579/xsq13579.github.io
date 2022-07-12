@@ -27,8 +27,9 @@
 }
 .canvas-bg{
     /*width: 1230px !important;*/
-    height: 278px !important;
+    height: 283px !important;
 }
+
 /*.sidebar-menu{*/
 /*    height: 350px !important;*/
 /*}*/
@@ -60,8 +61,8 @@
 }
 }
 .s-type-list{
-    /*margin-right: 15px !important;*/
-    padding-right: 15px !important;
+    margin-right: 15px !important;
+    /*padding-right: 15px !important;*/
 }
 #content .tab-content{
     margin-top: 0px !important;
@@ -74,6 +75,7 @@
 #content .tab-content #my-nav .row .remove-sites{
 
 }
-
-
-
+.sidebar-item .tit{
+    font-weight: bold;
+    color: #15559A;
+}
